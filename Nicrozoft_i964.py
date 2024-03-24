@@ -21,10 +21,10 @@ def getfiles(path):
 	return ff
 
 def compress_file(filename, cnt):
-	os.system('makecab /l %s %s %d.i964'% (outptd, filename, cnt))
+	os.system('makecab /l "%s" "%s" %d.i964'% (outptd, filename, cnt))
 
 def uncompress_file(filename, outptdir):
-	os.system('7z x %s -o%s -aoa'% (filename, outptdir))
+	os.system('7z x "%s" -o"%s" -aoa'% (filename, outptdir))
 
 def compress_files(curtree, path):
 	ct = curtree[1:]
