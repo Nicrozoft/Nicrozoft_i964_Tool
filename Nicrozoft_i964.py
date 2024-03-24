@@ -2,7 +2,6 @@ import json
 import os
 
 def getfiles(path):
-	print(1)
 	global cnt
 	try:
 		df = os.listdir(path)
